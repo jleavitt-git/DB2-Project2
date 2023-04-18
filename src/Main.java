@@ -116,7 +116,7 @@ public class Main {
                         System.out.println("Error: randomV value for v2 out of bounds. Expected 1 <= randomV <= 5000");
                         continue;
                     }
-                    if(v2 >= v1){
+                    if(v2 <= v1){
                         System.out.println("Error: v2 is greater than or equal to v1. Expected Expected 1 <= v1 < v2 <= 5000");
                     }
 
