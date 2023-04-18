@@ -1,9 +1,10 @@
-import java.io.IOException;
 import java.util.ArrayList;
 
 
 public class ArrayIndex {
 
+    //Array of ArrayLists of Pairs, Each ArrayList is at the index of randomV-1,
+    //and is a list of file and record number pairs at that randomV
     ArrayList<Pair>[] index;
 
     public ArrayIndex(ArrayList<Pair>[] index){
@@ -15,7 +16,7 @@ public class ArrayIndex {
         return index[randomV-1];
     }
 
-    public ArrayList<Pair> getValuesinRange(int v1, int v2) {
+    public ArrayList<Pair> getValuesInRange(int v1, int v2) {
         ArrayList<Pair> records = new ArrayList<>();
         for(int i = v1+1; i < v2; i++){
             records.addAll(getValuesAtRandomV(i));

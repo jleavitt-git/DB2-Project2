@@ -2,7 +2,7 @@ Jacob Leavitt, *********
 
 Section 1:
 
-    1. Place data txt files in the resources folder at the top level directory
+    1. Place data txt files in a folder named 'resources' at the top level directory
     2. Compile the j ava files in the src/ directory (I used IntelliJ IDEA to this automatically)
     3. Run Main.java
     4. input 'exit' to quit the program

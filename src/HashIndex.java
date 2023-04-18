@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class HashIndex {
 
-    //Integer RandomV, Arraylist of ID's
+    //Integer RandomV, Arraylist of file and record number pairs
     HashMap<Integer, ArrayList<Pair>> index;
 
     public ArrayList<Pair> getValuesAtRandomV(int randomV){
