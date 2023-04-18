@@ -44,7 +44,7 @@ public class Main {
 
                     //Validate v
                     if (v < 1 || v > 5000) {
-                        System.out.println("Error: randomV value out of bounds. Expected 1 >= randomV >= 5000");
+                        System.out.println("Error: randomV value out of bounds. Expected 1 <= randomV <= 5000");
                         continue;
                     }
 
@@ -85,7 +85,7 @@ public class Main {
 
                     //Validate v
                     if(v < 1 || v > 5000){
-                        System.out.println("Error: randomV value out of bounds. Expected 1 >= randomV >= 5000");
+                        System.out.println("Error: randomV value out of bounds. Expected 1 <= randomV <= 5000");
                         continue;
                     }
 
@@ -109,12 +109,15 @@ public class Main {
 
                     //Validate v1 and v2
                     if(v1 < 0 || v1 > 5000){
-                        System.out.println("Error: randomV value for v1 out of bounds. Expected 1 >= randomV >= 5000");
+                        System.out.println("Error: randomV value for v1 out of bounds. Expected 1 <= randomV <= 5000");
                         continue;
                     }
                     if(v2 < 1 || v2 > 5001){
-                        System.out.println("Error: randomV value for v2 out of bounds. Expected 1 >= randomV >= 5000");
+                        System.out.println("Error: randomV value for v2 out of bounds. Expected 1 <= randomV <= 5000");
                         continue;
+                    }
+                    if(v2 >= v1){
+                        System.out.println("Error: v2 is greater than or equal to v1. Expected Expected 1 <= v1 < v2 <= 5000");
                     }
 
                     //If index was not built do a full table scan
